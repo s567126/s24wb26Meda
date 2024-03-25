@@ -3,6 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p I want to play with Java.
   button(type="button", class="btn btn-secondary", onclick="double()") I am a button
   div(id="double") Up the amount
 
@@ -13,4 +14,4 @@ block content
       value++;
       power *= 2;
       document.getElementById("double").innerHTML = `Two to the power ${power} is ${value}`;
-  }
+    }
