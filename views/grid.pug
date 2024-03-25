@@ -9,9 +9,10 @@ block content
   - if(Number.isInteger(rows) > 0  && Number.isInteger(cols)> 0)
    p Both #{rows} and #{cols} are integers.
    - if (rows < 3 || rows > 13)
-     p There is a problem! Number of rows should range from 3 to 13!
+     p The Given values are out of Range.Please Enter values Between 3 and 13.
+     
    - else if (cols < 3 || cols > 13)
-     p There is a problem! Number of columns should range from 3 to 13!
+     p The Given values are out of Range.Please Enter values Between 3 and 13.
    - else
       table#outer
         - for(let i=0; i<rows; i++)
